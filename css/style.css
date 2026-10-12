@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=Silkscreen:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+
+
+}
+
+.hero {
+    position: relative;
+    background-image: url("../images/1329100.png");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 100vh;
+    z-index: -2;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), transparent);
+    z-index: -1;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    backdrop-filter: blur(5px);
+}
+
+nav {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.navbar {
+    display: flex;
+    padding: 20px 20px;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    transition: scale 0.2s ease;
+}
+
+.logo:hover {
+    scale: 1.1;
+}
+
+header div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+header div a {
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+header div a:hover {
+    color: orange;
+}
+
+.container {}
+
+.title {
+    font-size: 48px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.description {
+    color: rgba(255, 255, 255, 0.9);
+    max-width: 450px;
+    margin-bottom: 24px;
+}
+
+.hero-main {
+    max-width: 72rem;
+    margin: 0 auto 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.me {
+    position: relative;
+}
+
+.username {
+    position: absolute;
+    top: -20px;
+    left: 170px;
+    padding: 5px 20px;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+    border-radius: 4px;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.buttons a {
+    text-decoration: none;
+    color: white;
+}
+
+.about-link {
+    padding: 12px 20px;
+    background-color: orange;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+.projects-link {
+    padding: 12px 20px;
+    border: 1px solid orange;
+    background: rgba;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+.scroll {
+    color: white;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    transform: translateY(-8px);
+    bottom: 100px;
+    animation: bounceFade 1.5s ease both;
+    animation-delay: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.about {
+    color: white;
+    background-color: black;
+}
+
+.about-main {
+    max-width: 72rem;
+    margin: 0 auto;
+}
+
+.about-label {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: orange;
+    margin-bottom: 4px;
+}
+
+.about-title {
+    font-size: 32px;
+    margin-bottom: 48px;
+}
+
+.about-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.about-card {
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    padding: 15px 10px;
+    gap: 40px;
+}
+
+.about-card div {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-card div h4 {
+    margin-bottom: 6px;
+    font-size: 18px;
+}
+
+.about-card div p {
+    color: rgba(255, 255, 255, 0.95);
+    font-size: 15px;
+}
+
+.about-card img {
+    height: 50px;
+    width: 50px;
+    border-radius: 4px;
+}
+
+@keyframes bounceFade {
+    from {
+        opacity: 0;
+        transform: translateY(0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(8px);
+    }
+}
