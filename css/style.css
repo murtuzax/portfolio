@@ -21,7 +21,6 @@ body {
     background-size: cover;
     background-position: center;
     width: 100%;
-    min-height: 100vh;
     z-index: -2;
 }
 
@@ -29,7 +28,7 @@ body {
     position: absolute;
     inset: 0;
     width: 100%;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), transparent);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), transparent);
     z-index: -1;
 }
 
